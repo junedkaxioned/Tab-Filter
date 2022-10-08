@@ -137,10 +137,12 @@ li {
 }
 
 .image {
+  width: 256px;
   border-left: 1px solid #1F1F1F;
   border-bottom: 1px solid #1F1F1F;
 }
 
+.image img { object-fit: cover; }
 .hide-image { display: none; }
 
 /*=================================
