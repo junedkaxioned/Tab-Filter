@@ -82,6 +82,7 @@ sub { bottom: -.25em; }
 body {
   box-sizing: border-box;
   font-family: sans-serif;
+  background-color: #1F1F1F;
 }
 
 a { 
@@ -96,40 +97,50 @@ li {
 
 /* for wrapper */
 .wrapper {
-  max-width: 1360px;
-  width: 86%; 
+  max-width: 1440px;
+  width: 75%;
   margin: 0 auto;
 }
 
-/*=================================
-  Header styling starts here
-=================================*/
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 /*=================================
   main styling starts here
 =================================*/
 
+.tab-filter { padding: 30px 0; }
 
+.categories {
+  margin: 22px 0;
+  font-size: 12px;
+  text-align: left;
+}
+
+.category {
+  padding: 6px 12px;
+  color: #fff;
+}
+
+.category.active, 
+.category:hover { 
+  background-color: #8fd0a6; 
+}
+
+.gallery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hide-image { display: none; }
 
 /*=================================
   main styling ends here
 =================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
 
 /*media query starts*/
 /*media query for 995px starts here*/
